@@ -1,0 +1,21 @@
+.blog-header{
+    border-bottom: 1px solid #cecece;
+}
+
+.blog-header-logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-decoration:none
+}
+
+.social-media-icon{
+    font-size: 21px;
+}
+
+.nav-scroller{
+    border-bottom: 1px solid #cecece;
+}
+
+.navbar-menu{
+    text-decoration:none
+}
