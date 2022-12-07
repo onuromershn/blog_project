@@ -1,0 +1,97 @@
+{% extends "base/base.html.twig" %}
+
+{% block content %}
+
+    <div class="col-md-8">
+        <div class="row">
+            <section class="mb-4">
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                    a matter of hours to help you.</p>
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <form>
+                            <!--Grid row-->
+                            <div class="row mb-3">
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-1">
+                                        <label for="name" class="">Your name</label>
+                                        <input type="text" id="name" name="name" class="form-control">
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <label for="email" class="">Your email</label>
+                                        <input type="text" id="email" name="email" class="form-control">
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <label for="subject" class="">Subject</label>
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12 mb-4">
+
+                                    <div class="md-form">
+                                        <label for="message">Your message</label>
+                                        <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                        </form>
+                        <div class="col-md-12">
+                            <div class="send d-grid">
+                                <button class="btn btn-outline-dark"><span>Submit</span> <i class="arrow"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>KOCAELİ, 41000, TURKIYE</p>
+                            </li>
+
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+90 555 555 55 55</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>onuromersahin@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24175.481367876222!2d29.810993474279133!3d40.76345058166983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb47ae91250443%3A0x85f5a9986bc889d2!2sDerince%2C%20Kocaeli!5e0!3m2!1str!2str!4v1670444332528!5m2!1str!2str" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
