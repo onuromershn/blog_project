@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PostController extends AbstractController
 {
     /**
-     * @Route("/posts", name="app_post")
+     * @Route("/posts", name="app_posts")
      */
     public function list(): Response
     {

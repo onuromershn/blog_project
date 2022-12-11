@@ -42,10 +42,17 @@
         </header>
         <div class="nav-scroller py-1 mb-4">
             <nav class="nav d-flex justify-content-center">
-                <a href="#" class="navbar-menu p-2 mx-4">Homepage</a>
-                <a href="#" class="navbar-menu p-2 mx-4">Categories</a>
-                <a href="#" class="navbar-menu p-2 mx-4">About Me</a>
-                <a href="#" class="navbar-menu p-2 mx-4">Contact</a>
+                <a href="/posts" class="navbar-menu p-2 mx-4">Homepage</a>
+                <a class="nav-link dropdown-toggle p-2 mx-4" href="#" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                    <li><a class="dropdown-item" href="#">Technology</a></li>
+                    <li><a class="dropdown-item" href="#">Magazine</a></li>
+                </ul>
+                <a href="/about" class="navbar-menu p-2 mx-4">About Me</a>
+                <a href="/contact" class="navbar-menu p-2 mx-4">Contact</a>
             </nav>
         </div>
 
