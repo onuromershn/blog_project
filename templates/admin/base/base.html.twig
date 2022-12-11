@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <script src="https://kit.fontawesome.com/8d9a94d7ba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 border solid">
+            <h4 class="my-3 text-center">Admin Panel</h4>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start ms-3" id="menu">
+                <li class="mb-3"><a href="#" style="text-decoration: none;" class="link-secondary"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                <li class="mb-3">
+                    <a href="#submenu1" style="text-decoration: none" data-bs-toggle="collapse" class="nav-link px-0 align-middle link-secondary">
+                        <i class="fa-solid fa-blog"></i> Posts <i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                        <li class="w-100">
+                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> View Posts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Post</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="mb-3">
+                    <a href="#submenu2" style="text-decoration: none" data-bs-toggle="collapse" class="nav-link px-0 align-middle link-secondary">
+                        <i class="fa-solid fa-list"></i> Category <i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                        <li class="w-100">
+                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> View Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Category</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="mb-3">
+                    <a href="#submenu3" style="text-decoration: none" data-bs-toggle="collapse" class="nav-link px-0 align-middle link-secondary">
+                        <i class="fa-solid fa-tag"></i> Tag <i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                        <li class="w-100">
+                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> View Tasg</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Tag</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-3"><a href="#" style="text-decoration: none" class="link-secondary"><i class="fa-solid fa-gear"></i> Setting</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10 border solid">content</div>
+    </div>
+</div>
+<!-- End of .container -->
+
+<!-- Bootstrap JS -->
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

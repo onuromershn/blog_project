@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AboutController extends AbstractController
+class BaseController extends AbstractController
 {
     /**
-     * @Route("/about", name="app_about")
+     * @Route("/admin/base", name="app_admin_base")
      */
     public function index(): Response
     {
-        return $this->render('about/base.html.twig', [
-            'controller_name' => 'AboutController',
+        return $this->render('admin/base/base.html.twig', [
+            'controller_name' => 'BaseController',
         ]);
     }
 }
