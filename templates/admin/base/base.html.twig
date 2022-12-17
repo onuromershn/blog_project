@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/sb-admin-2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}">
 
     <title>Hello, world!</title>
 </head>
@@ -66,12 +68,35 @@
                 <li class="mb-3"><a href="#" style="text-decoration: none" class="link-secondary"><i class="fa-solid fa-gear"></i> Setting</a></li>
             </ul>
         </div>
-        <div class="col-md-10 border solid">content</div>
+        <div class="col-md-10 border solid">
+            <div class="container-fluid">
+                <div class="d-sm-flex align-items-end justify-content-end mt-2">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start ms-3" id="menu">
+                        <li>
+                            <a href="#submenu1" style="text-decoration: none" data-bs-toggle="collapse" class="nav-link px-0 align-middle link-secondary">
+                                Onur Ömer ŞAHİN <i class="fa-solid fa-arrow-down"></i></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100 text-end">
+                                    <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                {% block content %}{% endblock %}
+            </div>
+        </div>
     </div>
 </div>
 <!-- End of .container -->
 
 <!-- Bootstrap JS -->
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('assets/js/datatables-demo.js') }}"></script>
 </body>
 </html>
