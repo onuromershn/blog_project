@@ -14,28 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/sb-admin-2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}" type="image/x-icon" >
 
-    <title>Hello, world!</title>
+    <title>Onur Ömer ŞAHİN</title>
 </head>
 <body>
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 border solid">
+        <div class="col-md-2 ">
             <h4 class="my-3 text-center">Admin Panel</h4>
             <hr>
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start ms-3" id="menu">
-                <li class="mb-3"><a href="#" style="text-decoration: none;" class="link-secondary"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                <li class="mb-3"><a href="/admin/dashboard" style="text-decoration: none;" class="link-secondary"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
                 <li class="mb-3">
                     <a href="#submenu1" style="text-decoration: none" data-bs-toggle="collapse" class="nav-link px-0 align-middle link-secondary">
                         <i class="fa-solid fa-blog"></i> Posts <i class="fa-solid fa-arrow-down"></i></a>
                     <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                         <li class="w-100">
-                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> View Posts</a>
+                            <a href="/admin/posts" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> All Posts</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Post</a>
+                            <a href="/admin/post/add" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Post</a>
                         </li>
                     </ul>
                 </li>
@@ -45,10 +47,10 @@
                         <i class="fa-solid fa-list"></i> Category <i class="fa-solid fa-arrow-down"></i></a>
                     <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                         <li class="w-100">
-                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> View Categories</a>
+                            <a href="/admin/categories" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> All Categories</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Category</a>
+                            <a href="/admin/category/add" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Category</a>
                         </li>
                     </ul>
                 </li>
@@ -58,24 +60,24 @@
                         <i class="fa-solid fa-tag"></i> Tag <i class="fa-solid fa-arrow-down"></i></a>
                     <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                         <li class="w-100">
-                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> View Tasg</a>
+                            <a href="/admin/tags" class="nav-link px-0 link-secondary"><i class="fa-solid fa-eye fa-xs"></i> All Tags</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Tag</a>
+                            <a href="/admin/tag/add" class="nav-link px-0 link-secondary"><i class="fa-solid fa-plus fa-xs"></i> Add Tag</a>
                         </li>
                     </ul>
                 </li>
-                <li class="mb-3"><a href="#" style="text-decoration: none" class="link-secondary"><i class="fa-solid fa-gear"></i> Setting</a></li>
+                <li class="mb-3"><a href="/admin/settings" style="text-decoration: none" class="link-secondary"><i class="fa-solid fa-gear"></i> Setting</a></li>
             </ul>
         </div>
-        <div class="col-md-10 border solid">
+        <div class="col-md-10 ">
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-end justify-content-end mt-2">
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start ms-3" id="menu">
                         <li>
-                            <a href="#submenu1" style="text-decoration: none" data-bs-toggle="collapse" class="nav-link px-0 align-middle link-secondary">
+                            <a href="#submenu4" style="text-decoration: none" data-bs-toggle="collapse" class="nav-link px-0 align-middle link-secondary">
                                 Onur Ömer ŞAHİN <i class="fa-solid fa-arrow-down"></i></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                 <li class="w-100 text-end">
                                     <a href="#" class="nav-link px-0 link-secondary"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
                                 </li>
@@ -92,11 +94,28 @@
 <!-- End of .container -->
 
 <!-- Bootstrap JS -->
+<script src="{{ asset('assets/js/ckeditor.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('assets/js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('assets/js/datatables-demo.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+            console.log( editor );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script type="text/javascript">
+    $(function(){
+        $('#datepicker').datepicker();
+    });
+</script>
 </body>
 </html>

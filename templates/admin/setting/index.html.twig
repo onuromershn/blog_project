@@ -1,0 +1,60 @@
+{% extends "admin/base/base.html.twig" %}
+
+{% block content %}
+    <div class="w-50">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Settings</h1>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Logo</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="facebook" class="form-label">Facebook</label>
+            <input type="text" class="form-control" id="facebook" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="twitter" class="form-label">Twitter</label>
+            <input type="text" class="form-control" id="twitter" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="instagram" class="form-label">Instagram</label>
+            <input type="text" class="form-control" id="instagram" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="youtube" class="form-label">Youtube</label>
+            <input type="text" class="form-control" id="youtube" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="linkedin" class="form-label">Linkedin</label>
+            <input type="text" class="form-control" id="linkedin" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="copyright" class="form-label">Copyright</label>
+            <input type="text" class="form-control" id="copyright" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="newslatter" class="form-label">Newslatter</label>
+            <input type="text" class="form-control" id="newslatter" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="mail" class="form-label">Mail</label>
+            <input type="email" class="form-control" id="mail" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">About</label>
+            <textarea id="editor" ></textarea>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-outline-primary">Subscribe</button>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "admin/base/base.html.twig" %}
+
+{% block content %}
+    <div class="w-50">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Add Category</h1>
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="email" class="form-control" id="title" placeholder="">
+        </div>
+        <div class="mb-3">
+            <form class="row">
+                <label for="createdAt" class="form-label">Created At</label>
+                <div class="input-group date" id="datepicker">
+                    <input type="text" class="form-control" id="createdAt"/>
+                    <span class="input-group-append">
+                      <span class="input-group-text bg-light d-block">
+                        <i class="fa fa-calendar"></i>
+                      </span>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-outline-primary">Subscribe</button>
+        </div>
+    </div>
+{% endblock %}

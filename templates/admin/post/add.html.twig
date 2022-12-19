@@ -1,0 +1,55 @@
+{% extends "admin/base/base.html.twig" %}
+
+{% block content %}
+    <div class="w-50">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Add Posts</h1>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Image</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="email" class="form-control" id="title" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea id="editor" ></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select Category</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="tag" class="form-label">Tag</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select Tag</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <form class="row">
+                <label for="createdAt" class="form-label">Created At</label>
+                <div class="input-group date" id="datepicker">
+                    <input type="text" class="form-control" id="createdAt"/>
+                    <span class="input-group-append">
+                      <span class="input-group-text bg-light d-block">
+                        <i class="fa fa-calendar"></i>
+                      </span>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-outline-primary">Subscribe</button>
+        </div>
+    </div>
+{% endblock %}
