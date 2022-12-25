@@ -17,15 +17,17 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Tiger Nixon</td>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td class="d-flex justify-content-around">
-                            <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
-                            <a href="#"><i class="fa-solid fa-trash"></i></a>
-                        </td>
-                    </tr>
+                    {% for tag in tags %}
+                        <tr>
+                            <td>{{ tag.id }}</td>
+                            <td>{{ tag.title }}</td>
+                            <td>{{ tag.createdAt | date('d-m-Y') }}</td>
+                            <td class="d-flex justify-content-around">
+                                <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </div>

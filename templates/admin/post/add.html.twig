@@ -7,20 +7,19 @@
         </div>
         <div class="mb-3">
             <label for="formFile" class="form-label">Image</label>
-            <input class="form-control" type="file" id="formFile">
+            <input class="form-control" type="file" id="formFile" name="image">
         </div>
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="email" class="form-control" id="title" placeholder="">
+            <input type="text" class="form-control" id="title" placeholder="" name="title">
         </div>
         <div class="mb-3">
             <label for="content" class="form-label">Content</label>
-            <textarea id="editor" ></textarea>
+            <textarea id="editor" name="content"></textarea>
         </div>
         <div class="mb-3">
             <label for="category" class="form-label">Category</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Select Category</option>
+            <select multiple class="form-select" name="categories[]" aria-label="Default select example">
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
@@ -28,8 +27,7 @@
         </div>
         <div class="mb-3">
             <label for="tag" class="form-label">Tag</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Select Tag</option>
+            <select multiple class="form-select" name="tags[]" aria-label="Default select example">
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
@@ -39,7 +37,7 @@
             <form class="row">
                 <label for="createdAt" class="form-label">Created At</label>
                 <div class="input-group date" id="datepicker">
-                    <input type="text" class="form-control" id="createdAt"/>
+                    <input type="text" class="form-control" id="createdAt" name="createdAt"/>
                     <span class="input-group-append">
                       <span class="input-group-text bg-light d-block">
                         <i class="fa fa-calendar"></i>
